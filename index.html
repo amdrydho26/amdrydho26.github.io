@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>AmdRydho Portofolio Card</title>
+    <link href="assets/user-line.png" rel="shortcut icon" />
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="info">
+                <div class="count">
+                    <i class="ri-graduation-cap-line"></i>
+                    <p>S1 IT</p>
+                </div>
+                <p>Education</p>
+            </div>
+
+            <div class="profile">
+                <img src="assets/profile-1.png">
+            </div>
+
+            <div class="info">
+                <div class="count">
+                    <i class="ri-medal-line"></i>
+                    <p>3.82 / 4.00</p>
+                </div>
+                <p>GPA</p>
+            </div>
+
+        </header>
+
+        <!-- NAMA & TITLE -->
+        <div class="about">
+            <h2>Ahmad Ridho <i class="ri-verified-badge-fill"></i></h2>
+            <p>Beginner Programmer / Music Composer</p>
+        </div>
+
+        <!-- SOSIAL MEDIA ICONS -->
+        <div class="social-link">
+            <a href="https://www.youtube.com/@rydhoproductiontv7904?feature=share7" target="_blank"><i class="ri-youtube-line"></i></a>
+            <a href="https://www.linkedin.com/in/ahmad-rydho-803434287" target="_blank"><i class="ri-linkedin-box-line"></i></a>
+            <a href="https://github.com/amdrydho26" target="_blank"><i class="ri-github-line"></i></a>
+            <a href="https://www.tiktok.com/@amd.rydho26?_t=8edGY0IUJ4J&_r=1" target="_blank"><i class="ri-tiktok-line"></i></a>
+            <a href="https://instagram.com/amd.rydho26/" target="_blank"><i class="ri-instagram-line"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=ytansak53375@gmail.com" target="_blank"><i class="ri-mail-line"></i></a>
+        </div>
+
+        <!-- SELEKSI TAB JUDUL -->
+        <div class="tabs-container">
+            <ul class="tabs">
+
+                <li class="active">
+                    <a href="#about" id="tab-1">About Me</a>
+                </li>
+
+                <li>
+                    <a href="#coding" id="tab-2">Coding</a>
+                </li>
+
+                <li>
+                    <a href="#music" id="tab-3">Music</a>
+                </li>
+
+                <li>
+                    <a href="#photo" id="tab-4">Photo</a>
+                </li>
+                
+                <li id="active-tab"></li>
+            </ul>
+        </div>
+
+        <!-- SELEKSI TAB ISI -->
+        <div class="tab-content active-tab-content" id="tab-1">
+            <p>Hi, my name is Ahmad Ridho. I am currently studying at the Islamic University of Riau (UIR), Faculty of Engineering, Department of Information Engineering, S1. 
+                <br>
+                <br>
+                Coding is one of my hobbies, because coding is fun and can solve a problem. Currently I am learning the basics of C++, Java, HTML, CSS, and JavaScript.
+                <br>
+                <br>
+                I also like music, because music is the perfect medium for depicting expressions and emotions. You can see my works in the music section.</p>
+
+        </div>
+
+        <div class="tab-content" id="tab-2">
+            <p>
+                Some simple projects that I have made:
+            </p>
+            <div class="vote">
+                <a href="">Portofolio Card</a>
+                <a href="https://amdrydho26.github.io/AHMAD-RIDHO-Dashboard/" target="_blank">My bio link tools</a>
+                <a href="">Encrypt and decrypt text to binary code by manipulating the binary code</a>
+
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-3">
+
+            <p>
+                Some music projects I have worked on:
+            </p>
+
+            <div class="song-lists">
+
+                <a href="#" onclick="openSongSepanjang(), loadSongSepanjang()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>The Rain</h4>
+                            <p>Sepanjang Jalan Kenangan (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongLara(), loadSongLara()">
+                    <div class="song-list">
+                        <img src="album/lara-album.png">
+                        <div>
+                            <h4>Dialog Senja</h4>
+                            <p>Lara (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" onclick="openSongBattle(), loadSongBattle()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Charlotte Churchman</h4>
+                            <p>Battle For Glory (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongLebaran(), loadSongLebaran()">
+                    <div class="song-list">
+                        <img src="album/lebaran-album.png">
+                        <div>
+                            <h4>Valdy Nyonk, Daeng Syawal, Syahriyadi, ...</h4>
+                            <p>Lebaran (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongAyah(), loadSongAyah()">
+                    <div class="song-list">
+                        <img src="album/ayah-ibu-album.png">
+                        <div>
+                            <h4>Karnamereka</h4>
+                            <p>Ayah Ibu (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongBaby(), loadSongBaby()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Clean Bandit</h4>
+                            <p>Baby (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongDedap(), loadSongDedap()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Husni Thamrin</h4>
+                            <p>Dedap Durhaka (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongSyaikhona(), loadSongSyaikhona()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Miftah Rahman</h4>
+                            <p>Syaikhona (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongLagu(), loadSongLagu()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Alyssa Dezek</h4>
+                            <p>Lagu Untuk Kamu (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongMerbau(), loadSongMerbau()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Uknown</h4>
+                            <p>Merbau Bersiram Darah (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongPatah(), loadSongPatah()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Boy Shandy</h4>
+                            <p>Patah Hati (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongRayuan(), loadSongRayuan()">
+                    <div class="song-list">
+                        <img src="album/rayuan-perempuan-gila-album.png">
+                        <div>
+                            <h4>Nadin Amizah</h4>
+                            <p>Rayuan Perempuan Gila (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongSampai(), loadSongSampai()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Banda Neira</h4>
+                            <p>Sampai Jadi Debu (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongSatu(), loadSongSatu()">
+                    <div class="song-list">
+                        <img src="album/satu-rasa-cinta-album.jpg">
+                        <div>
+                            <h4>Arief</h4>
+                            <p>Satu Rasa Cinta (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongSeandainya(), loadSongSeandainya()">
+                    <div class="song-list">
+                        <img src="assets/rdop.jpg">
+                        <div>
+                            <h4>Vierra</h4>
+                            <p>Seandainya (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" onclick="openSongTanpa(), loadSongTanpa()">
+                    <div class="song-list">
+                        <img src="album/tanpa-rasa-bersalah-album.png">
+                        <div>
+                            <h4>Fabio Asher</h4>
+                            <p>Tanpa Rasa Bersalah (Cover)</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-4">
+            <p>
+                Photography and videography are my side hobbies. Because the equipment is expensive, I only use a smartphone camera. 
+                <br><br>
+                Below are some photos that I have taken and edited:
+            </p>
+
+            <div class="photos">
+
+                <a href="Photos/img-1.jpg"><img src="Photos/img-1.jpg" loading="eager"></a>
+                <a href="Photos/img-2.jpg"><img src="Photos/img-2.jpg" loading="eager"></a>
+                <a href="Photos/img-3.jpg"><img src="Photos/img-3.jpg" loading="eager"></a>
+                <a href="Photos/img-4.jpg"><img src="Photos/img-4.jpg" loading="eager"></a>
+                <a href="Photos/img-5.jpg"><img src="Photos/img-5.jpg" loading="eager"></a>
+                <a href="Photos/img-6.jpg"><img src="Photos/img-6.jpg" loading="eager"></a>
+                <a href="Photos/img-7.png"><img src="Photos/img-7.png" loading="eager"></a>
+                <a href="Photos/img-8.jpg"><img src="Photos/img-8.jpg" loading="eager"></a>
+                <a href="Photos/img-9.jpg"><img src="Photos/img-9.jpg" loading="eager"></a>
+                <a href="Photos/img-10.jpg"><img src="Photos/img-10.jpg" loading="eager"></a>
+                <a href="Photos/img-11.jpg"><img src="Photos/img-11.jpg" loading="eager"></a>
+                <a href="Photos/img-12.jpg"><img src="Photos/img-12.jpg" loading="eager"></a>
+                <a href="Photos/img-13.jpg"><img src="Photos/img-13.jpg" loading="lazy"></a>
+                <a href="Photos/img-14.jpg"><img src="Photos/img-14.jpg" loading="lazy"></a>
+ 
+            </div>
+        </div>
+
+        <button class="hire-me" onclick="openPopup()">Hire Me</button>
+
+        <div class="popup" id="popup">
+            <h2>Sorry:(</h2>
+            <p>I am currently unable to work. I am learning and practicing my skills for better results. Please hire me next time.</p>
+            <button class="ok-btn" type="button" onclick="closePopup()">OK</button>
+        </div>
+
+
+
+        <div class="song-popup" id="sepanjang">
+            <img src="assets/rdop.jpg">
+            <h4>The Rain</h4>
+            <p>Sepanjang Jalan Kenangan (Cover)</p>
+
+            <audio id="sepanjang-AP" controls preload="metadata">
+                <source src="Music/sepanjang-jalan-kenangan.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioSepanjang(), closeSongSepanjang()">Back</button>
+        </div>
+
+        <div class="song-popup" id="lara">
+            <img src="album/lara-album.png">
+            <h4>Dialog Senja</h4>
+            <p>Lara (Cover)</p>
+
+            <audio id="lara-AP" controls preload="metadata">
+                <source src="Music/lara.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioLara(), closeSongLara()">Back</button>
+        </div>
+
+        <div class="song-popup" id="battle">
+            <img src="assets/rdop.jpg">
+            <h4>Charlotte Churchman</h4>
+            <p>Battle For Glory (Cover)</p>
+
+            <audio id="battle-AP" controls preload="metadata">
+                <source src="Music/battle-for-glory.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioBattle(), closeSongBattle()">Back</button>
+        </div>
+
+        <div class="song-popup" id="lebaran">
+            <img src="album/lebaran-album.png">
+            <h4>Valdy Nyonk, Daeng Syawal, Syahriyadi, ...</h4>
+            <p>Lebaran (Cover)</p>
+
+            <audio id="lebaran-AP" controls preload="metadata">
+                <source src="Music/lebaran.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioLebaran(), closeSongLebaran()">Back</button>
+        </div>
+
+        <div class="song-popup" id="ayah">
+            <img src="album/ayah-ibu-album.png">
+            <h4>Karnamereka</h4>
+            <p>Ayah Ibu (Cover)</p>
+
+            <audio id="ayah-AP" controls preload="metadata">
+                <source src="Music/ayah-ibu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioAyah(), closeSongAyah()">Back</button>
+        </div>
+
+        <div class="song-popup" id="baby">
+            <img src="assets/rdop.jpg">
+            <h4>Clean Bandit</h4>
+            <p>Baby (Cover)</p>
+
+            <audio id="baby-AP" controls preload="metadata">
+                <source src="Music/baby.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioBaby(), closeSongBaby()">Back</button>
+        </div>
+
+        <div class="song-popup" id="dedap">
+            <img src="assets/rdop.jpg">
+            <h4>Husni Thamrin</h4>
+            <p>Dedap Durhaka (Cover)</p>
+
+            <audio id="dedap-AP" controls preload="metadata">
+                <source src="Music/dedap-durhaka.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioDedap(), closeSongDedap()">Back</button>
+        </div>
+
+        <div class="song-popup" id="syaikhona">
+            <img src="assets/rdop.jpg">
+            <h4>Miftah Rahman</h4>
+            <p>Syaikhona (Cover)</p>
+
+            <audio id="syaikhona-AP" controls preload="metadata">
+                <source src="Music/el-haura.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioSyaikhona(), closeSongSyaikhona()">Back</button>
+        </div>
+
+        <div class="song-popup" id="lagu">
+            <img src="assets/rdop.jpg">
+            <h4>Alyssa Dezek</h4>
+            <p>Lagu Untuk Kamu (Cover)</p>
+
+            <audio id="lagu-AP" controls preload="metadata">
+                <source src="Music/lagu-untuk-kamu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioLagu(), closeSongLagu()">Back</button>
+        </div>
+
+        <div class="song-popup" id="merbau">
+            <img src="assets/rdop.jpg">
+            <h4>Uknown</h4>
+            <p>Merbau Bersiram Darah (Cover)</p>
+
+            <audio id="merbau-AP" controls preload="metadata">
+                <source src="Music/merbau-bersimbah-darah.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioMerbau(), closeSongMerbau()">Back</button>
+        </div>
+
+        <div class="song-popup" id="patah">
+            <img src="assets/rdop.jpg">
+            <h4>Boy Shandy</h4>
+            <p>Patah Hati (Cover)</p>
+
+            <audio id="patah-AP" controls preload="metadata">
+                <source src="Music/patah-hati.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioPatah(), closeSongPatah()">Back</button>
+        </div>
+
+        <div class="song-popup" id="rayuan">
+            <img src="album/rayuan-perempuan-gila-album.png">
+            <h4>Nadin Amizah</h4>
+            <p>Rayuan Perempuan Gila (Cover)</p>
+
+            <audio id="rayuan-AP" controls preload="metadata">
+                <source src="Music/rayuan-perempuan-gila.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioRayuan(), closeSongRayuan()">Back</button>
+        </div>
+
+        <div class="song-popup" id="sampai">
+            <img src="assets/rdop.jpg">
+            <h4>Banda Neira</h4>
+            <p>Sampai Jadi Debu (Cover)</p>
+
+            <audio id="sampai-AP" controls preload="metadata">
+                <source src="Music/sampai-jadi-debu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioSampai(), closeSongSampai()">Back</button>
+        </div>
+
+        <div class="song-popup" id="satu">
+            <img src="album/satu-rasa-cinta-album.jpg">
+            <h4>Arief</h4>
+            <p>Satu Rasa Cinta (Cover)</p>
+
+            <audio id="satu-AP" controls preload="metadata">
+                <source src="Music/satu-rasa-cinta.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioSatu(), closeSongSatu()">Back</button>
+        </div>
+
+        <div class="song-popup" id="seandainya">
+            <img src="assets/rdop.jpg">
+            <h4>Vierra</h4>
+            <p>Seandainya (Cover)</p>
+
+            <audio id="seandainya-AP" controls preload="metadata">
+                <source src="Music/seandainya.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioSeandainya(), closeSongSeandainya()">Back</button>
+        </div>
+
+        <div class="song-popup" id="tanpa">
+            <img src="album/tanpa-rasa-bersalah-album.png">
+            <h4>Fabio Asher</h4>
+            <p>Tanpa Rasa Bersalah (Cover)</p>
+
+            <audio id="tanpa-AP" controls preload="metadata">
+                <source src="Music/tanpa-rasa-bersalah.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <button onclick="stopAudioTanpa(), closeSongTanpa()">Back</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

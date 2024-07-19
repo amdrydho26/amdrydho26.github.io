@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+*:focus{
+    outline: 1px solid #3d5afe;
+    color: #3d5afe !important;
+}
+
+*::-webkit-scrollbar{
+    width: 8px;
+    height: 9px;
+    background: #e8eaf6;
+    border-radius: 160px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: #c5cae9;
+    border-radius: 160px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #eff3f4;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background: #fff;
+    width: 448px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+}
+
+.container header .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.container header .info .count{
+    padding: 6px;
+    font-weight: 600;
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.container header .info .count i{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container header .profile{
+    width: 400px;   
+}
+
+.container header .profile img{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-top: -50%;
+    border: 6px solid #fff;
+}
+
+.container .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.container .about h2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container .about h2 i{
+    color: #3d5afe;
+}
+
+.container .about p{
+    font-size: 16px;
+    color: #424242;
+}
+
+.container .social-link{
+    display: flex;
+    gap: 16px;
+}
+
+.container .social-link a{
+    background: #fafafa;
+    padding: 8px;
+    display: flex;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    color: #616161;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.container .social-link a i{
+    font-size: 26px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.container .social-link a:hover{
+    border: 1px solid #7e57c2;
+}
+
+.container .social-link a:hover i{
+    color: #7e57c2;
+    font-size: 27px;
+}
+
+.container .tabs-container{
+    overflow-x: auto;
+    margin-bottom: 7px;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.container .tabs-container .tabs{
+    position: relative;
+    display: flex;
+    border: 1px solid #e8eaf6;
+    border-radius: 8px;
+    list-style: none;
+    width: 100%;
+}
+
+.container .tabs-container .tabs li{
+    z-index: 2;
+}
+
+.container .tabs-container .tabs li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    min-width: 103px;
+    outline: none;
+    padding: 12px 16px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.container .tabs-container .tabs li a:hover,
+.container .tabs-container .tabs li a:active{
+    color: #7e57c2;
+}
+
+.container .tabs-container #active-tab{
+    position: absolute;
+    width: 100%;
+    width: 105px;
+    height: 100%;
+    background: #ede7f6;
+    z-index: 1;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.container .tab-content{
+    display: none;
+    overflow-y: auto;
+}
+
+.container .active-tab-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 200px;
+    padding: 0 4px;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.container .tabs-container .tabs li:nth-child(1):has(.active)~#active-tab{
+    transform: translateX(0);
+}
+
+.container .tabs-container .tabs li:nth-child(2):has(.active)~#active-tab{
+    transform: translateX(102px);
+}
+
+.container .tabs-container .tabs li:nth-child(3):has(.active)~#active-tab{
+    transform: translateX(205px);
+}
+
+.container .tabs-container .tabs li:nth-child(4):has(.active)~#active-tab{
+    transform: translateX(310px);
+}
+
+.container .tab-content .vote{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.container .tab-content .vote a{
+    display: flex;
+    background: #fafafa;
+    gap: 8px;
+    border-radius: 5px;
+    color: #757575;
+    padding: 8px;
+    border: 1px solid #eee;
+    transition: all 0.3 ease;
+}
+
+.container .tab-content .vote a:hover{
+    border: 1px solid #7e57c2;
+    color: #7e57c2;
+}
+
+.container .tab-content .song-lists{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.container .tab-content .song-lists .song-list{
+    display: flex;
+    width: 400px;
+    gap: 16px;
+    align-items: center;
+    padding: 10px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #000;
+}
+
+.container .tab-content .song-lists .song-list:hover{
+    border: 1px solid #7e57c2;
+    color: #7e57c2;
+}
+
+.container .tab-content .song-lists .song-list h4{
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.container .tab-content .song-lists .song-list audio{
+    margin-top: 6px;
+    height: 40px;
+}
+
+.container .tab-content .song-lists .song-list img{
+    width: 48px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container .tab-content .photos{
+    width: 100%;
+    columns: 4;
+    column-gap: 8px;
+    padding: 8px;
+}
+
+.container .tab-content .photos img{
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 9px;
+    border: 3px solid #fff;
+}
+
+.container .tab-content .photos img:hover{
+    border: 3px solid #536dff;
+}
+
+.container .hire-me{
+    background-color: #536dff;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    cursor: default;
+    pointer-events: fill;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.container .hire-me:hover{
+    background-color: #1b3dff;
+    font-weight: bolder;
+}
+
+.popup{
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 100;
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup .ok-btn{
+    background-color: #536dff;
+    color: #fff;
+    margin-top: 25px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    cursor: default;
+    pointer-events: fill;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.popup .ok-btn:hover{
+    background-color: #1b3dff;
+}
+
+
+.song-popup{
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open-song{
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+}
+
+.container .song-popup audio{
+    width: 325px;
+}
+
+.song-popup img{
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -45px;
+    object-fit: cover;
+}
+
+.song-popup h4{
+    margin-top: 10px;
+}
+
+.song-popup p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.song-popup button{
+    background-color: #536dff;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 25%;
+    border: none;
+    cursor: default;
+    pointer-events: fill;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.song-popup button:hover{
+    background-color: #1b3dff;
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 520px) {
+    .container{
+        width: 350px;
+        font-size: 80%;
+    }
+
+    .container header .info{
+        font-size: 10px;
+    }
+
+    .container .about p{
+        font-size: 13px;
+    }
+
+    .container .tabs-container .tabs li a{
+        min-width: 74px;
+    }
+
+    .container .tabs-container #active-tab{
+        width: 88px;
+    }
+
+    .container .tabs-container .tabs li:nth-child(1):has(.active)~#active-tab{
+        transform: translateX(0);
+    }
+    
+    .container .tabs-container .tabs li:nth-child(2):has(.active)~#active-tab{
+        transform: translateX(82px);
+    }
+    
+    .container .tabs-container .tabs li:nth-child(3):has(.active)~#active-tab{
+        transform: translateX(156px);
+    }
+    
+    .container .tabs-container .tabs li:nth-child(4):has(.active)~#active-tab{
+        transform: translateX(229px);
+    }
+
+    .container .social-link{
+        gap: 10px;
+    }
+
+    .container .social-link a{
+        padding: 8px;
+        width: 40px;
+    }
+
+    .container .social-link a i{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .container .social-link a:hover{
+        border: 1px solid #7e57c2;
+        width: 42px;
+    }
+    
+    .container .social-link a:hover i{
+        color: #7e57c2;
+        font-size: 22px;
+    }
+
+    .container .active-tab-content{
+        font-size: 14px;
+    }
+
+    .popup{
+        width: 300px;
+    }
+
+    .container .tab-content .song-lists .song-list{
+        width: 300px;
+        font-size: 90%;
+    }
+
+    .container .tab-content .song-lists .song-list img{
+        width: 45px;
+    }
+
+    .song-popup{
+        background: #fff;
+        border-radius: 16px;
+        font-size: 14px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        width: 325px;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        transition: transform 0.4s, top 0.4s;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .open-song{
+        visibility: visible;
+        opacity: 1;
+        top: 50%;
+    }
+
+    .container .song-popup audio{
+        width: 270px;
+    }
+
+    .song-popup img{
+        width: 100px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-top: -35px;
+        object-fit: cover;
+    }
+   
+  }
