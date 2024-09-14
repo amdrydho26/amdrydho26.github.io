@@ -63,6 +63,25 @@ function stopAudioLara(){
 }
 
 
+let untungnya = document.getElementById("untungnya");
+var audioPlayerUntungnya = document.getElementById('untungnya-AP');
+
+function openSongUntungnya(){
+    untungnya.classList.add("open-song");
+}
+function closeSongUntungnya(){
+    untungnya.classList.remove("open-song");
+}
+function loadSongUntungnya(){
+    audioPlayerUntungnya.load();
+    audioPlayerUntungnya.play();
+}
+function stopAudioUntungnya(){
+    audioPlayerUntungnya.pause();
+    audioPlayerUntungnya.currentTime = 0;
+}
+
+
 let battle = document.getElementById("battle");
 var audioPlayerBattle = document.getElementById('battle-AP');
 
